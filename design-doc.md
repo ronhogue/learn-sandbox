@@ -26,14 +26,19 @@ Accelerate High Performance Computing storage with Azure HPC Cache
 
 ## Summary
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+Create a virtual caching solution for NFS storage. Client machines will connect to the cache, read data, and process the data.
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+By the end of this module the learner will be able to:
+1. Create an Azure HPC Cache.
+1. Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
+1. Configure (Attach) virtual client machines to read from the cache.
+1. Read and process storage data using client machines.
 
 ## Chunk your content into subtasks
 
+<!---
 Identify the subtasks of *module title*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
@@ -41,6 +46,46 @@ Identify the subtasks of *module title*
 | TODO | TODO | TODO | TODO | TODO |
 | TODO | TODO | TODO | TODO | TODO |
 | TODO | TODO | TODO | TODO | TODO |
+-->
+
+### Overview
+
+Create HPC Cache
+Add a storage target to HPC Cache over Express Route
+Create HPC clients to mount HPC Cache and request data
+HPC Cache reads the data from the storage target and stores it
+Client requests for the same data are served from HPC Cache
+
+### Creating the cache
+
+Creating an HPC Cache
+Adding a Storage Target
+Building the Namespace
+
+### Connecting to On-prem NAS
+
+Express Route highly recommended for best throughput
+HPC Cache requires root access to NAS exports
+Root squash must be disabled on NAS
+Usage Model
+Namespace
+
+### Connect clients
+
+Point hundreds of clients to HPC Cache
+Most efficient way is to leverage scripts and automation to create and configure HPC clients
+HPC clients mount HPC Cache virtual namespace path
+Clients must have network access to the HPC Cache’s virtual network and private subnet
+Use the mount command to mount the HPC Cache storage to a local folder
+
+### Configure HPC Cache
+
+NAS Storage Permissions (root access, no root squash)
+Network Access (dedicated subnet, DNS, ports)
+Client permissions (same vnet, not subnet; network access, NFS utilities, local path for mount)
+Mount Instructions
+Usage Model
+Namespace
 
 ## Outline the units
 
