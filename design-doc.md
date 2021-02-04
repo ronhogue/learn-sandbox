@@ -48,48 +48,10 @@ Identify the subtasks of *module title*
 | TODO | TODO | TODO | TODO | TODO |
 -->
 
-### Overview
-
-Create HPC Cache
-Add a storage target to HPC Cache over Express Route
-Create HPC clients to mount HPC Cache and request data
-HPC Cache reads the data from the storage target and stores it
-Client requests for the same data are served from HPC Cache
-
-### Creating the cache
-
-Creating an HPC Cache
-Adding a Storage Target
-Building the Namespace
-
-### Connecting to On-prem NAS
-
-Express Route highly recommended for best throughput
-HPC Cache requires root access to NAS exports
-Root squash must be disabled on NAS
-Usage Model
-Namespace
-
-### Connect clients
-
-Point hundreds of clients to HPC Cache
-Most efficient way is to leverage scripts and automation to create and configure HPC clients
-HPC clients mount HPC Cache virtual namespace path
-Clients must have network access to the HPC Cache’s virtual network and private subnet
-Use the mount command to mount the HPC Cache storage to a local folder
-
-### Configure HPC Cache
-
-NAS Storage Permissions (root access, no root squash)
-Network Access (dedicated subnet, DNS, ports)
-Client permissions (same vnet, not subnet; network access, NFS utilities, local path for mount)
-Mount Instructions
-Usage Model
-Namespace
 
 ## Outline the units
 
-*Add more units as needed for your content*
+<!--- *Add more units as needed for your content*
 
 1. **Introduction**
 
@@ -131,6 +93,42 @@ Namespace
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
     
     *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+
+-->
+
+1. **Introduction**
+
+- Create HPC Cache
+- Add a storage target to HPC Cache over Express Route
+- Create HPC clients to mount HPC Cache and request data
+- HPC Cache reads the data from the storage target and stores it
+- Client requests for the same data are served from HPC Cache
+
+2. **Creating the cache**
+
+- Creating an HPC Cache
+- Adding a Storage Target
+- Building the Namespace
+- Network Access (dedicated subnet, DNS, ports)
+- Usage Model
+
+3. **Connecting to Storage**
+
+- Create a Linux-based (NFS) storage server
+- Configure the NFS server (create exports)
+- Set storage Permissions (root access to exports, no root squash)
+
+4. **Connect clients**
+
+- Point hundreds of clients to HPC Cache
+- Most efficient way is to leverage scripts and automation to create and configure HPC clients
+- HPC clients mount HPC Cache virtual namespace path
+- Client permissions (same vnet, not subnet; network access, NFS utilities, local path for mount)
+- Mount Instructions
+
+5. **Exercise - Quiz**
+
+6. (Optional) **Video demo**
 
 ## Notes
 
