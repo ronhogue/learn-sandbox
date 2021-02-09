@@ -38,16 +38,15 @@ By the end of this module the learner will be able to:
 
 ## Chunk your content into subtasks
 
-<!---
-Identify the subtasks of *module title*
+> NOTE: This table is necessary. Having established your learning objectives, you need to spell out how you will reinforce those objectives.
+> Once that is established, you can lay out your units for conceptual, exercise, knowledge check, etc.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
--->
-
+| Create an Azure HPC Cache | TODO | TODO | TODO | TODO |
+| Configure an Azure HPC Cache | TODO | TODO | TODO | TODO |
+| Configure virtual client machines | TODO | TODO | TODO | TODO |
+| Read and process storage data | TODO | TODO | TODO | TODO |
 
 ## Outline the units
 
@@ -98,37 +97,47 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-- Create HPC Cache
-- Add a storage target to HPC Cache over Express Route
-- Create HPC clients to mount HPC Cache and request data
-- HPC Cache reads the data from the storage target and stores it
-- Client requests for the same data are served from HPC Cache
+    > NOTE: Think of the introduction as the value proposition for the module; what problem is this module going to solve, what are users going to learn from this module, what technologies are we talking about, etc.
 
-2. **Creating the cache**
+    - Create HPC Cache
+    - Add a storage target to HPC Cache over Express Route
+    - Create HPC clients to mount HPC Cache and request data
+    - HPC Cache reads the data from the storage target and stores it
+    - Client requests for the same data are served from HPC Cache
 
-- Creating an HPC Cache
-- Adding a Storage Target
-- Building the Namespace
-- Network Access (dedicated subnet, DNS, ports)
-- Usage Model
+1. **Creating the cache**
 
-3. **Connecting to Storage**
+    - Creating an HPC Cache
+    - Adding a Storage Target
+    - Building the Namespace
+    - Network Access (dedicated subnet, DNS, ports)
+    - Usage Model
 
-- Create a Linux-based (NFS) storage server
-- Configure the NFS server (create exports)
-- Set storage Permissions (root access to exports, no root squash)
+1. **Connecting to Storage**
 
-4. **Connect clients**
+    - Create a Linux-based (NFS) storage server
+    - Configure the NFS server (create exports)
+    - Set storage Permissions (root access to exports, no root squash)
 
-- Point hundreds of clients to HPC Cache
-- Most efficient way is to leverage scripts and automation to create and configure HPC clients
-- HPC clients mount HPC Cache virtual namespace path
-- Client permissions (same vnet, not subnet; network access, NFS utilities, local path for mount)
-- Mount Instructions
+1. **Connect clients**
 
-5. **Exercise - Quiz**
+    - Point hundreds of clients to HPC Cache
+    - Most efficient way is to leverage scripts and automation to create and configure HPC clients
+    - HPC clients mount HPC Cache virtual namespace path
+    - Client permissions (same vnet, not subnet; network access, NFS utilities, local path for mount)
+    - Mount Instructions
 
-6. (Optional) **Video demo**
+1. **Exercise - Quiz**
+
+    > NOTE: This isn't a problem since we're in the early design phase right now, but a unit can be either an exercise or a knowledge check, but not both.
+
+1. (Optional) **Video demo**
+
+    > NOTE: A video should be included in one of your conceptual units.
+
+1. **Summary**
+
+    > NOTE: The summary is necessary.
 
 ## Notes
 
