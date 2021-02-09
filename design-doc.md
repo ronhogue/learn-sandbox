@@ -1,7 +1,9 @@
 # Title
 
-Accelerate High Performance Computing storage with Azure HPC Cache
-<!--- Alternate title: Accelerate NFS for HPC storage by using Azure HPC Cache -->
+    - Proposed title: Accelerate High Performance Computing storage with Azure HPC Cache
+    - Alternate title 1: Accelerate storage for HPC workloads with Azure HPC Cache
+    - Alternate title 2: Accelerate HPC storage with Azure HPC Cache
+    - Alternate title 3: Accelerate NFS for HPC storage with Azure HPC Cache
 
 ## Role(s)
 
@@ -99,11 +101,12 @@ By the end of this module the learner will be able to:
 
     > NOTE: Think of the introduction as the value proposition for the module; what problem is this module going to solve, what are users going to learn from this module, what technologies are we talking about, etc.
 
-    - Create HPC Cache
+<!--    - Create HPC Cache
     - Add a storage target to HPC Cache over Express Route
     - Create HPC clients to mount HPC Cache and request data
     - HPC Cache reads the data from the storage target and stores it
-    - Client requests for the same data are served from HPC Cache
+    - Client requests for the same data are served from HPC Cache -->
+Suppose you are a storage administrator for an animation studio. The studio's latest animated movie is being released in a few weeks. Artists and animators are still making finishing touches to the production. The director needs to review and approve the final changes. When rendering the video on the studio's local storage, the process runs overnight. Because of the impending deadline, changes have to be reviewed the same day and can't wait for an overnight render. You want to point your HPC render farm to a storage cache so renders can be completed during the workday.
 
 1. **Creating the cache**
 
