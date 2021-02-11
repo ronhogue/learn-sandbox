@@ -1,9 +1,10 @@
 # Title
 
-    - Proposed title: Accelerate High Performance Computing storage with Azure HPC Cache
-    - Alternate title 1: Accelerate storage for HPC workloads with Azure HPC Cache
-    - Alternate title 2: Accelerate HPC storage with Azure HPC Cache
-    - Alternate title 3: Accelerate NFS for HPC storage with Azure HPC Cache
+Proposed title: Accelerate High Performance Computing storage with Azure HPC Cache
+
+- Alternate title 1: Accelerate storage for HPC workloads with Azure HPC Cache
+- Alternate title 2: Accelerate HPC storage with Azure HPC Cache
+- Alternate title 3: Accelerate NFS for HPC storage with Azure HPC Cache
 
 ## Role(s)
 
@@ -33,9 +34,10 @@ Create a virtual caching solution for NFS storage. Client machines will connect 
 ## Learning objectives
 
 By the end of this module the learner will be able to:
+
 1. Create an Azure HPC Cache.
 1. Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
-1. Configure (Attach) virtual client machines to read from the cache.
+1. Create and configure (Attach) virtual client machines to read from the cache.
 1. Read and process storage data using client machines.
 
 ## Chunk your content into subtasks
@@ -45,10 +47,10 @@ By the end of this module the learner will be able to:
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Create an Azure HPC Cache | TODO | TODO | TODO | TODO |
-| Configure an Azure HPC Cache | TODO | TODO | TODO | TODO |
-| Configure virtual client machines | TODO | TODO | TODO | TODO |
-| Read and process storage data | TODO | TODO | TODO | TODO |
+| Create an Azure HPC Cache | ??? | Knowledge check ? | 1 | yes |
+| Configure an Azure HPC Cache | ??? | Knowledge check | 2 | yes |
+| Create and configure virtual client machines | ??? | Knowledge check | 3 | maybe combine with 4 |
+| Read and process storage data | ??? | Knowledge check | 4 | maybe combine with 3 |
 
 ## Outline the units
 
@@ -106,7 +108,7 @@ By the end of this module the learner will be able to:
     - Create HPC clients to mount HPC Cache and request data
     - HPC Cache reads the data from the storage target and stores it
     - Client requests for the same data are served from HPC Cache -->
-Suppose you are a storage administrator for an animation studio. The studio's latest animated movie is being released in a few weeks. Artists and animators are still making finishing touches to the production. The director needs to review and approve the final changes. When rendering the video on the studio's local storage, the process runs overnight. Because of the impending deadline, changes have to be reviewed the same day and can't wait for an overnight render. You want to point your HPC render farm to a storage cache so renders can be completed during the workday.
+Suppose you are a storage administrator for an animation studio. The studio's latest animated movie is being released in a few weeks. Artists and animators are still making finishing touches to the production. The director needs to review and approve the final changes. When rendering the video on the studio's local storage, the process runs overnight. Because of the impending deadline, changes have to be reviewed the same day and can't wait for an overnight render. You want to point your HPC render farm to a storage cache like Azure HPC Cache, so renders can be completed during the workday.
 
 1. **Creating the cache**
 
