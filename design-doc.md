@@ -35,6 +35,7 @@ Create a virtual caching solution for NFS storage. Client machines will connect 
 
 By the end of this module the learner will be able to:
 
+1. What is Azure HPC Cache?
 1. Create an Azure HPC Cache.
 1. Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
 1. Create and configure (Attach) virtual client machines to read from the cache.
