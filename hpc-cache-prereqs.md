@@ -4,7 +4,7 @@ There are a few pre-requisites that need to be met prior to setting up your Azur
 
 ## DNS and Network
 
-Azure HPC Cache has two network requirements.
+Azure HPC Cache has two network requirements - a custom DNS server and a dedicated subnet.
 
 ### DNS
 
